@@ -1,0 +1,23 @@
+{
+  "name": "agenda-base",
+  "version": "1.0.0",
+  "description": "Estrutura e gerenciamento de agenda",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduhds/agenda-base.git"
+  },
+  "keywords": [
+    "agenda",
+    "base"
+  ],
+  "author": "Eduardo Henrique",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eduhds/agenda-base/issues"
+  },
+  "homepage": "https://github.com/eduhds/agenda-base#readme"
+}
