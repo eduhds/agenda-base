@@ -269,6 +269,28 @@ class AgendaBase {
             }
         });
     }
+
+    /**
+     * Formata horas como 00:00
+     *
+     * @param {number} horas
+     * @param {boolean} sufixo
+     * @returns {string} 00:00 ou 00:00h
+     * @memberof AgendaBase
+     */
+    static formatHoras(horas, sufixo = false) {
+        sufixo = (sufixo && 'h') || '';
+        if (typeof horas === 'object') {
+            return horas
+                .map(h => `${h}:00`)
+                .map(hs =>
+                    hs.length < 5 ? `0${hs}${sufixo}` : `${hs}${sufixo}`
+                );
+        }
+        horas = `${horas}:00`;
+        horas = horas.length < 5 ? `0${horas}` : horas;
+        return `${horas}${sufixo}`;
+    }
 }
 
 module.exports = AgendaBase;

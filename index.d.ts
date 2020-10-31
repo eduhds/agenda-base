@@ -18,4 +18,6 @@ export default class AgendaBase {
     novo(diaSemana: string, diaMes: number, mes: string, ano: number, hora: string, descricao: string): void;
 
     salvar(onSalvar: (eventos: Array<any>) => void): Promise;
+
+    formatHoras(horas: Array<number> | number, sufixo: boolean = false): string;
 }
