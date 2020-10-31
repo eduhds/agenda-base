@@ -106,8 +106,9 @@ class Evento {
      * @param {number} [diaMes=0]
      * @param {string} [mes='']
      * @param {number} [ano=2020]
-     * @param {string} [hora='00:00']
+     * @param {number} [hora=0]
      * @param {string} [descricao='']
+     * @param {Object} [filtros={}]
      * @memberof Evento
      */
     constructor(
@@ -115,8 +116,9 @@ class Evento {
         diaMes = 0,
         mes = '',
         ano = 2020,
-        hora = '00:00',
-        descricao = ''
+        hora = 0,
+        descricao = '',
+        filtros = {}
     ) {
         this.diaSemana = diaSemana;
         this.diaMes = diaMes;
@@ -124,11 +126,12 @@ class Evento {
         this.ano = ano;
         this.hora = hora;
         this.descricao = descricao;
+        this.filtros = filtros;
     }
 }
 
 /**
- * Gerencimando de agenda
+ * Gerenciamento de agenda
  *
  * @class AgendaBase
  */
