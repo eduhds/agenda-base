@@ -15,7 +15,7 @@ export default class AgendaBase {
 
     getHorasDisponiveis(diaSemana: string, diaMes: number, mes: string, ano: number): Array<number>;
 
-    novo(diaSemana: string, diaMes: number, mes: string, ano: number, hora: string, descricao: string): void;
+    novo(diaSemana: string, diaMes: number, mes: string, ano: number, hora: string, descricao: string, filtros: any): void;
 
     salvar(onSalvar: (eventos: Array<any>) => void): Promise;
 

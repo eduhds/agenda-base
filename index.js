@@ -249,9 +249,9 @@ class AgendaBase {
      * @param {string} descricao
      * @memberof AgendaBase
      */
-    novo(diaSemana, diaMes, mes, ano, hora, descricao) {
+    novo(diaSemana, diaMes, mes, ano, hora, descricao, filtros) {
         this.eventos.push(
-            new Evento(diaSemana, diaMes, mes, ano, hora, descricao)
+            new Evento(diaSemana, diaMes, mes, ano, hora, descricao, filtros)
         );
     }
 
